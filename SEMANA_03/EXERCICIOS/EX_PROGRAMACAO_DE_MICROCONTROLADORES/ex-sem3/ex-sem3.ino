@@ -7,8 +7,6 @@
 #define ESCOLHER 39
 #define TOCAR 35
 
-//int anterior = 0;
-
 int notaAtual = 0;
 
 double notas[15] = {264, 296.2, 332.6, 352.4, 
@@ -59,13 +57,11 @@ void loop() {
   int leitura = analogRead(LDR);
 
   int escala = map(leitura, 32, 4063, 0, 15); 
-  //Serial.println(escala);
 
   if (notaAtual != escala){
     Serial.println(escala);
-
     sequencia(escala);
-    //anterior = escala;
+
     notaAtual = escala;
   }
 
@@ -81,8 +77,6 @@ void loop() {
 
   if (digitalRead(TOCAR) == LOW) {
     for (int i =0; i <= ultima; i++){
-      //tone(BUZZER, escolhidas[i], 500);
-
       sequencia(escolhidas[i]);
 
       Serial.println("tocar :");

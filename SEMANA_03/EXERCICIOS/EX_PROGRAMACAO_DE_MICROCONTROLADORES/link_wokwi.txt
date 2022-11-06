@@ -1,0 +1,3 @@
+https://wokwi.com/projects/346617272152883796
+
+A versão S3 do ESP32 no simulador está com algum problema com o buzzer :(
