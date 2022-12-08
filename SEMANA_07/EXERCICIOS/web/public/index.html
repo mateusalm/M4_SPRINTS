@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>TIC TAC TOE</h1>
+    <table id="board">
+      <tr>
+        <td class="board-space" id="0" onclick="selectSpace(this)"></td>
+        <td class="board-space" id="1" onclick="selectSpace(this)"></td>
+        <td class="board-space" id="2" onclick="selectSpace(this)"></td>
+      </tr>
+      <tr>
+        <td class="board-space" id="3" onclick="selectSpace(this)"></td>
+        <td class="board-space" id="4" onclick="selectSpace(this)"></td>
+        <td class="board-space" id="5" onclick="selectSpace(this)"></td>
+      </tr>
+      <tr>
+        <td class="board-space" id="6" onclick="selectSpace(this)"></td>
+        <td class="board-space" id="7" onclick="selectSpace(this)"></td>
+        <td class="board-space" id="8" onclick="selectSpace(this)"></td>
+      </tr>
+    </table>
+    <div id="result"></div>
+    <div id="play-again">
+      <button onclick="changeGameStatus(2)" id="play-again">PLAY AGAIN</button>
+    </div>
+    <script src="./js/tictactoe.js"></script>
+  </body>
+</html>
